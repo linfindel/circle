@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  cursor: none;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle {
+  animation: circle 1.5s ease infinite alternate;
+
+  border: 5px solid #0059ff;
+  border-radius: 100%;
+
+  box-shadow: 0px 0px 50px 5px #0059ff, 0px 0px 0px 5px #0059ff;
+
+  width: 10vw;
+  height: 10vw;
+}
+
+@keyframes circle {
+  0% {
+    box-shadow: 0px 0px 125px 5px #0059ff, 0px 0px 0px 25px #0059ff77;
+  }
+
+  100% {
+    box-shadow: 0px 0px 25px 5px #0059ff, 0px 0px 0px 12.5px #0059ff77;
+  }
+}
